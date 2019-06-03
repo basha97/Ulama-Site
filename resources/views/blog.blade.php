@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>129 Beyond Travel Agency</title>
+    <title>Ulama</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ URL::asset('backend/css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{ URL::asset('backend/vendors/linericon/style.css')}}">
@@ -32,39 +32,39 @@
             </a>
         </div>
         <ul class="list menu-left">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="packages.html">Packages</a>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <button type="button" class="dropdown-toggle" data-toggle="dropdown">
-                        Pages
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="about-us.html">About-us</a>
-                        <a class="dropdown-item" href="amenities.html">Amenities</a>
-                        <a class="dropdown-item" href="elements.html">Elements</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <button type="button" class="dropdown-toggle" data-toggle="dropdown">
-                        Blog
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="blog.html">Blog</a>
-                        <a class="dropdown-item" href="single-blog.html">Blog Details</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
+			<li>
+				<a href="{{ URL::to('index')}}">Home</a>
+			</li>
+			<li>
+				<a href="packages.html">Packages</a>
+			</li>
+			<li>
+				<div class="dropdown">
+					<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+						Pages
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="{{ URL::to('about')}}">About-us</a>
+						<a class="dropdown-item" href="{{ URL::to('about')}}">Amenities</a>
+						<a class="dropdown-item" href="{{ URL::to('about')}}">Elements</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="dropdown">
+					<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+						Blog
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="{{ URL::to('blog')}}">Blog</a>
+						<a class="dropdown-item" href="single-blog.html">Blog Details</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="{{ URL::to('contact')}}">Contact</a>
+			</li>
+		</ul>
     </div>
     <!--================ End Offcanvus Menu Area =================-->
 
@@ -595,21 +595,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="vendors/isotope/isotope-min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="vendors/jquery-ui/jquery-ui.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendors/swiper/js/swiper.min.js"></script>
-    <script src="vendors/scroll/jquery.mCustomScrollbar.js"></script>
-    <script src="js/theme.js"></script>
+    <script src="{{ URL::asset('backend/js/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/popper.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/bootstrap.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/stellar.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/nice-select/js/jquery.nice-select.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/isotope/imagesloaded.pkgd.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/isotope/isotope-min.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/jquery-ui/jquery-ui.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/jquery.ajaxchimp.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/mail-script.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/popup/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/swiper/js/swiper.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/scroll/jquery.mCustomScrollbar.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/theme.js')}}"></script>
 </body>
 
 </html>

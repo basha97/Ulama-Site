@@ -33,7 +33,7 @@
 		</div>
 		<ul class="list menu-left">
 			<li>
-				<a href="index.html">Home</a>
+				<a href="{{ URL::to('index')}}">Home</a>
 			</li>
 			<li>
 				<a href="packages.html">Packages</a>
@@ -44,9 +44,9 @@
 						Pages
 					</button>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="about-us.html">About-us</a>
-						<a class="dropdown-item" href="amenities.html">Amenities</a>
-						<a class="dropdown-item" href="elements.html">Elements</a>
+						<a class="dropdown-item" href="{{ URL::to('about')}}">About-us</a>
+						<a class="dropdown-item" href="{{ URL::to('about')}}">Amenities</a>
+						<a class="dropdown-item" href="{{ URL::to('about')}}">Elements</a>
 					</div>
 				</div>
 			</li>
@@ -56,13 +56,13 @@
 						Blog
 					</button>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="blog.html">Blog</a>
+						<a class="dropdown-item" href="{{ URL::to('blog')}}">Blog</a>
 						<a class="dropdown-item" href="single-blog.html">Blog Details</a>
 					</div>
 				</div>
 			</li>
 			<li>
-				<a href="contact.html">Contact</a>
+				<a href="{{ URL::to('contact')}}">Contact</a>
 			</li>
 		</ul>
 	</div>

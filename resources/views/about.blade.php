@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>129 Beyond Travel Agency</title>
+	<title>Ulama</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="{{ URL::asset('backend/css/bootstrap.css')}}">
 	<link rel="stylesheet" href="{{ URL::asset('backend/vendors/linericon/style.css')}}">
@@ -33,7 +33,7 @@
 		</div>
 		<ul class="list menu-left">
 			<li>
-				<a href="index.html">Home</a>
+				<a href="{{ URL::to('index')}}">Home</a>
 			</li>
 			<li>
 				<a href="packages.html">Packages</a>
@@ -44,9 +44,9 @@
 						Pages
 					</button>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="about-us.html">About-us</a>
-						<a class="dropdown-item" href="amenities.html">Amenities</a>
-						<a class="dropdown-item" href="elements.html">Elements</a>
+						<a class="dropdown-item" href="{{ URL::to('about')}}">About-us</a>
+						<a class="dropdown-item" href="{{ URL::to('about')}}">Amenities</a>
+						<a class="dropdown-item" href="{{ URL::to('about')}}">Elements</a>
 					</div>
 				</div>
 			</li>
@@ -56,13 +56,13 @@
 						Blog
 					</button>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="blog.html">Blog</a>
+						<a class="dropdown-item" href="{{ URL::to('blog')}}">Blog</a>
 						<a class="dropdown-item" href="single-blog.html">Blog Details</a>
 					</div>
 				</div>
 			</li>
 			<li>
-				<a href="contact.html">Contact</a>
+				<a href="{{ URL::to('contact')}}">Contact</a>
 			</li>
 		</ul>
 	</div>

@@ -6,20 +6,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>129 Beyond Travel Agency</title>
+    <title>Ulama</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="vendors/linericon/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-    <link rel="stylesheet" href="vendors/animate-css/animate.css">
-    <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css">
-    <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-    <link rel="stylesheet" href="vendors/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="vendors/scroll/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="{{ URL::asset('backend/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('backend/vendors/linericon/style.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('backend/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('backend/vendors/owl-carousel/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('backend/vendors/nice-select/css/nice-select.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('backend/vendors/animate-css/animate.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('backend/vendors/jquery-ui/jquery-ui.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('backend/vendors/popup/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('backend/vendors/swiper/css/swiper.min.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('backend/vendors/scroll/jquery.mCustomScrollbar.css')}}">
     <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ URL::asset('backend/css/style.css')}}">
 </head>
 
 <body>
@@ -28,43 +28,43 @@
     <div class="side_menu">
         <div class="logo">
             <a href="index.html">
-                <img src="img/logo.png" alt="">
+                <img src="{{ URL::asset('img/logo.png')}}" alt="">
             </a>
         </div>
         <ul class="list menu-left">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="packages.html">Packages</a>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <button type="button" class="dropdown-toggle" data-toggle="dropdown">
-                        Pages
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="about-us.html">About-us</a>
-                        <a class="dropdown-item" href="amenities.html">Amenities</a>
-                        <a class="dropdown-item" href="elements.html">Elements</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <button type="button" class="dropdown-toggle" data-toggle="dropdown">
-                        Blog
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="blog.html">Blog</a>
-                        <a class="dropdown-item" href="single-blog.html">Blog Details</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
+			<li>
+				<a href="{{ URL::to('index')}}">Home</a>
+			</li>
+			<li>
+				<a href="packages.html">Packages</a>
+			</li>
+			<li>
+				<div class="dropdown">
+					<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+						Pages
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="{{ URL::to('about')}}">About-us</a>
+						<a class="dropdown-item" href="{{ URL::to('about')}}">Amenities</a>
+						<a class="dropdown-item" href="{{ URL::to('about')}}">Elements</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="dropdown">
+					<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+						Blog
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="{{ URL::to('blog')}}">Blog</a>
+						<a class="dropdown-item" href="single-blog.html">Blog Details</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="{{ URL::to('contact')}}">Contact</a>
+			</li>
+		</ul>
     </div>
     <!--================ End Offcanvus Menu Area =================-->
 
@@ -84,7 +84,7 @@
                 <div class="col-lg-12">
                     <a href="#" class="main_btn">
                         book a table
-                        <img src="img/next.png" alt="">
+                        <img src="{{ URL::asset('img/next.png')}}" alt="">
                     </a>
                 </div>
             </div>
@@ -109,13 +109,13 @@
                             <a href="index.html">Home</a>
                             <a href="contact.html">Contact</a>
                         </div>
-                        <img src="img/next.png" alt="">
+                        <img src="{{ URL::asset('img/next.png')}}" alt="">
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 header-left">
                     <div class="">
-                        <img class="img-fluid w-100" src="img/banner/banner-img1.jpg" alt="">
+                        <img class="img-fluid w-100" src="{{ URL::asset('img/banner/banner-img1.jpg')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -171,7 +171,7 @@
                         <div class="col-md-12 text-right">
                             <button type="submit" value="submit" class="main_btn">
                                 Send Message
-                                <img src="img/next.png" alt="">
+                                <img src="{{ URL::asset('img/next.png')}}" alt="">
                             </button>
                         </div>
                     </form>
@@ -245,14 +245,14 @@
                     <div class="single-footer-widget mail-chimp">
                         <h6 class="mb-20">Instafeed</h6>
                         <ul class="instafeed d-flex flex-wrap">
-                            <li><img src="img/instagram/i1.jpg" alt=""></li>
-                            <li><img src="img/instagram/i2.jpg" alt=""></li>
-                            <li><img src="img/instagram/i3.jpg" alt=""></li>
-                            <li><img src="img/instagram/i4.jpg" alt=""></li>
-                            <li><img src="img/instagram/i5.jpg" alt=""></li>
-                            <li><img src="img/instagram/i6.jpg" alt=""></li>
-                            <li><img src="img/instagram/i7.jpg" alt=""></li>
-                            <li><img src="img/instagram/i8.jpg" alt=""></li>
+                            <li><img src="{{ URL::asset('img/instagram/i1.jpg')}}" alt=""></li>
+                            <li><img src="{{ URL::asset('img/instagram/i2.jpg')}}" alt=""></li>
+                            <li><img src="{{ URL::asset('img/instagram/i3.jpg')}}" alt=""></li>
+                            <li><img src="{{ URL::asset('img/instagram/i4.jpg')}}" alt=""></li>
+                            <li><img src="{{ URL::asset('img/instagram/i5.jpg')}}" alt=""></li>
+                            <li><img src="{{ URL::asset('img/instagram/i6.jpg')}}" alt=""></li>
+                            <li><img src="{{ URL::asset('img/instagram/i7.jpg')}}" alt=""></li>
+                            <li><img src="{{ URL::asset('img/instagram/i8.jpg')}}" alt=""></li>
                         </ul>
                     </div>
                 </div>
@@ -315,28 +315,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="vendors/isotope/isotope-min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="vendors/jquery-ui/jquery-ui.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendors/swiper/js/swiper.min.js"></script>
-    <script src="vendors/scroll/jquery.mCustomScrollbar.js"></script>
+    <script src="{{ URL::asset('backend/js/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/popper.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/bootstrap.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/stellar.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/nice-select/js/jquery.nice-select.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/isotope/imagesloaded.pkgd.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/isotope/isotope-min.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/jquery-ui/jquery-ui.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/jquery.ajaxchimp.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/mail-script.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/popup/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/swiper/js/swiper.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/vendors/scroll/jquery.mCustomScrollbar.js')}}"></script>
     <!-- contact js -->
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="{{ URL::asset('backend/js/jquery.form.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/jquery.validate.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/contact.js')}}"></script>
     <!--gmaps Js-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script>
-    <script src="js/theme.js"></script>
+    <script src="{{ URL::asset('backend/js/gmaps.min.js')}}"></script>
+    <script src="{{ URL::asset('backend/js/theme.js')}}"></script>
 </body>
 
 </html>
