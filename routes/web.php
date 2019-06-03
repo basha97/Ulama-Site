@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+Route::get('/','MainController@index')->name('index');
+Route::get('about','MainController@about')->name('about');
+Route::get('blog','MainController@blog')->name('blog');
+Route::get('contact','MainController@contact')->name('contact');
