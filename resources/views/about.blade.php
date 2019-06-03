@@ -8,18 +8,18 @@
 	<link rel="icon" href="img/favicon.png" type="image/png">
 	<title>129 Beyond Travel Agency</title>
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="vendors/animate-css/animate.css">
-	<link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css">
-	<link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/swiper/css/swiper.min.css">
-	<link rel="stylesheet" href="vendors/scroll/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="{{ URL::asset('backend/css/bootstrap.css')}}">
+	<link rel="stylesheet" href="{{ URL::asset('backend/vendors/linericon/style.css')}}">
+	<link rel="stylesheet" href="{{ URL::asset('backend/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{ URL::asset('backend/vendors/owl-carousel/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{ URL::asset('backend/vendors/nice-select/css/nice-select.css')}}">
+	<link rel="stylesheet" href="{{ URL::asset('backend/vendors/animate-css/animate.css')}}">
+	<link rel="stylesheet" href="{{ URL::asset('backend/vendors/jquery-ui/jquery-ui.css')}}">
+	<link rel="stylesheet" href="{{ URL::asset('backend/vendors/popup/magnific-popup.css')}}">
+	<link rel="stylesheet" href="{{ URL::asset('backend/vendors/swiper/css/swiper.min.css')}}">
+	<link rel="stylesheet" href="{{ URL::asset('backend/vendors/scroll/jquery.mCustomScrollbar.css')}}">
 	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="{{ URL::asset('backend/css/style.css')}}">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
 	<div class="side_menu">
 		<div class="logo">
 			<a href="index.html">
-				<img src="img/logo.png" alt="">
+				<img src="{{ URL::asset('img/logo.png')}}" alt="">
 			</a>
 		</div>
 		<ul class="list menu-left">
@@ -84,7 +84,7 @@
 				<div class="col-lg-12">
 					<a href="#" class="main_btn">
 						book a table
-						<img src="img/next.png" alt="">
+						<img src="{{ URL::asset('img/next.png')}}" alt="">
 					</a>
 				</div>
 			</div>
@@ -108,13 +108,13 @@
 							<a href="index.html">Home</a>
 							<a href="about-us.html">About</a>
 						</div>
-						<img src="img/next.png" alt="">
+						<img src="{{ URL::asset('img/next.png')}}" alt="">
 					</div>
 				</div>
 
 				<div class="col-lg-6 col-md-6 header-left">
 					<div class="">
-						<img class="img-fluid w-100" src="img/banner/banner-img1.jpg" alt="">
+						<img class="img-fluid w-100" src="{{ URL::asset('img/banner/banner-img1.jpg')}}" alt="">
 					</div>
 				</div>
 			</div>
@@ -128,9 +128,9 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-lg-5 offset-lg-1">
 					<div class="left-content">
-						<img class="img1 img-fluid" src="img/popular/img1.jpg" alt="">
-						<img class="img2 img-fluid" src="img/popular/img2.jpg" alt="">
-						<img class="img3 img-fluid" src="img/popular/img3.jpg" alt="">
+						<img class="img1 img-fluid" src="{{ URL::asset('img/popular/img1.jpg')}}" alt="">
+						<img class="img2 img-fluid" src="{{ URL::asset('img/popular/img2.jpg')}}" alt="">
+						<img class="img3 img-fluid" src="{{ URL::asset('img/popular/img3.jpg')}}" alt="">
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
@@ -145,7 +145,7 @@
 								<!-- single counter -->
 								<div class="single_counter">
 									<div class="thumb">
-										<img src="img/popular/icon1.png" alt="">
+										<img src="{{ URL::asset('img/popular/icon1.png')}}" alt="">
 									</div>
 									<div class="info-content">
 										<h4>London</h4>
@@ -155,7 +155,7 @@
 								<!-- single counter -->
 								<div class="single_counter">
 									<div class="thumb">
-										<img src="img/popular/icon2.png" alt="">
+										<img src="{{ URL::asset('img/popular/icon2.png')}}" alt="">
 									</div>
 									<div class="info-content">
 										<h4>Turkey</h4>
@@ -168,7 +168,7 @@
 								<!-- single counter -->
 								<div class="single_counter">
 									<div class="thumb">
-										<img src="img/popular/icon3.png" alt="">
+										<img src="{{ URL::asset('img/popular/icon3.png')}}" alt="">
 									</div>
 									<div class="info-content">
 										<h4>Paris</h4>
@@ -178,7 +178,7 @@
 								<!-- single counter -->
 								<div class="single_counter">
 									<div class="thumb">
-										<img src="img/popular/icon4.png" alt="">
+										<img src="{{ URL::asset('img/popular/icon4.png')}}" alt="">
 									</div>
 									<div class="info-content">
 										<h4>Thailand</h4>
@@ -248,7 +248,7 @@
 							<div class="col-lg-12 text-center">
 								<button class="main_btn text-uppercase">
 									Browse all Packages
-									<img src="img/next.png" alt="">
+									<img src="{{ URL::asset('img/next.png')}}" alt="">
 								</button>
 							</div>
 						</form>
@@ -265,7 +265,7 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="testi_img">
-						<img class="img-fluid" src="img/testi-img.jpg" alt="">
+						<img class="img-fluid" src="{{ URL::asset('img/testi-img.jpg')}}" alt="">
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
@@ -273,7 +273,7 @@
 						<!-- single testi -->
 						<div class="single_testi">
 							<div class="quote">
-								<img class="img-fluid" src="img/quote.png" alt="">
+								<img class="img-fluid" src="{{ URL::asset('img/quote.png')}}" alt="">
 							</div>
 							<div class="testi_content">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -290,7 +290,7 @@
 						<!-- single testi -->
 						<div class="single_testi">
 							<div class="quote">
-								<img class="img-fluid" src="img/quote.png" alt="">
+								<img class="img-fluid" src="{{ URL::asset('img/quote.png')}}" alt="">
 							</div>
 							<div class="testi_content">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -373,14 +373,14 @@
 					<div class="single-footer-widget mail-chimp">
 						<h6 class="mb-20">Instafeed</h6>
 						<ul class="instafeed d-flex flex-wrap">
-							<li><img src="img/instagram/i1.jpg" alt=""></li>
-							<li><img src="img/instagram/i2.jpg" alt=""></li>
-							<li><img src="img/instagram/i3.jpg" alt=""></li>
-							<li><img src="img/instagram/i4.jpg" alt=""></li>
-							<li><img src="img/instagram/i5.jpg" alt=""></li>
-							<li><img src="img/instagram/i6.jpg" alt=""></li>
-							<li><img src="img/instagram/i7.jpg" alt=""></li>
-							<li><img src="img/instagram/i8.jpg" alt=""></li>
+							<li><img src="{{ URL::asset('img/instagram/i1.jpg')}}" alt=""></li>
+							<li><img src="{{ URL::asset('img/instagram/i2.jpg')}}" alt=""></li>
+							<li><img src="{{ URL::asset('img/instagram/i3.jpg')}}" alt=""></li>
+							<li><img src="{{ URL::asset('img/instagram/i4.jpg')}}" alt=""></li>
+							<li><img src="{{ URL::asset('img/instagram/i5.jpg')}}" alt=""></li>
+							<li><img src="{{ URL::asset('img/instagram/i6.jpg')}}" alt=""></li>
+							<li><img src="{{ URL::asset('img/instagram/i7.jpg')}}" alt=""></li>
+							<li><img src="{{ URL::asset('img/instagram/i8.jpg')}}" alt=""></li>
 						</ul>
 					</div>
 				</div>
@@ -409,21 +409,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="vendors/jquery-ui/jquery-ui.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/swiper/js/swiper.min.js"></script>
-	<script src="vendors/scroll/jquery.mCustomScrollbar.js"></script>
-	<script src="js/theme.js"></script>
+	<script src="{{ URL::asset('backend/js/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{ URL::asset('backend/js/popper.js')}}"></script>
+	<script src="{{ URL::asset('backend/js/bootstrap.min.js')}}"></script>
+	<script src="{{ URL::asset('backend/js/stellar.js')}}"></script>
+	<script src="{{ URL::asset('backend/vendors/nice-select/js/jquery.nice-select.min.js')}}"></script>
+	<script src="{{ URL::asset('backend/vendors/isotope/imagesloaded.pkgd.min.js')}}"></script>
+	<script src="{{ URL::asset('backend/vendors/isotope/isotope-min.js')}}"></script>
+	<script src="{{ URL::asset('backend/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+	<script src="{{ URL::asset('backend/vendors/jquery-ui/jquery-ui.js')}}"></script>
+	<script src="{{ URL::asset('backend/js/jquery.ajaxchimp.min.js')}}"></script>
+	<script src="{{ URL::asset('backend/js/mail-script.js')}}"></script>
+	<script src="{{ URL::asset('backend/vendors/popup/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{ URL::asset('backend/vendors/swiper/js/swiper.min.js')}}"></script>
+	<script src="{{ URL::asset('backend/vendors/scroll/jquery.mCustomScrollbar.js')}}"></script>
+	<script src="{{ URL::asset('backend/js/theme.js')}}"></script>
 </body>
 
 </html>
